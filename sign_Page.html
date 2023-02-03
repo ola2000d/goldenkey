@@ -1,0 +1,164 @@
+<html>
+<head>
+	<title>sign</title>
+    <meta charset="utf-8">
+   
+	 
+	 <link href="design.css" rel="stylesheet">
+	 <script src="Jquery.js"></script>
+	<script>
+		
+		
+		$( document ).ready(function() {
+		$("#msg").hide();
+		
+		
+	});
+		function logup() {
+		
+		window.location.href = "sign2.html";
+		}
+		
+			function login() {
+		if ($("#username").val() == "ola_darraj" && $("#password").val() == "123") {
+
+			$("#msg").hide();
+			window.location.href = "project_new.html#homePage";
+		
+		} else if ($("#username").val() == "alshafe3i" && $("#password").val() == "1234") {
+
+			$("#msg").hide();
+			window.location.href = "alshafe3i.html";
+		}
+		else if ($("#username").val() == "ard_housing" && $("#password").val() == "12345") {
+
+			$("#msg").hide();
+			window.location.href = "ard.html";
+		}
+		
+		else if ($("#username").val() == "dar housing" && $("#password").val() == "12345") {
+
+			$("#msg").hide();
+			window.location.href = "dar.html";
+		}
+		
+		else if ($("#username").val() == "hamdan" && $("#password").val() == "12345") {
+
+			$("#msg").hide();
+			window.location.href = "project_new.html#hamdan";
+		}
+		
+		else {
+		//alert("You are not a valid user");
+			$("#msg").show();
+		}
+		}
+		
+		function aa(){
+			$("#msg").hide();
+			$("#username").val("");
+			$("#password").val("");
+		}
+	</script>
+
+
+</head>
+
+<body>	
+
+
+
+
+  <header class='header' >
+ <nav class="navbar navbar-expand-lg">
+        
+          <a class="navbar-brand" href="Home_Page.html"><img src="img/logo-01.png"></a>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+			
+			<li class="nav-item active">
+                <a class="nav-link" href="sign_Page.html">تسجيل</a>
+              </li>
+			
+			<li class="nav-item">
+                <a class="nav-link" href="contact_Page.html">تواصل معنا</a>
+              </li>
+			<li class="nav-item">
+                <a class="nav-link" href="about_Page.html">حولنا</a>
+              </li>
+			  
+			  <li class="nav-item ">
+                <a class="nav-link" href="housing.html">الإسكانات</a>
+              </li> 
+			  
+              <li class="nav-item ">
+                <a class="nav-link" href="Home_Page.html">الصفحة
+                  <span class="sr-only">(الرئيسية)</span>
+                </a>
+              </li> 
+              
+              
+              
+            </ul>
+          </div>
+      
+      </nav>
+
+</header>
+
+<div class="banner header-text">
+     
+        <div class="banner-item-sign">
+		
+          <div class="text-content">
+           
+            <h3>Sign in</h3>
+          </div>
+        </div>
+	
+</div>
+<div class="contact-section">
+
+
+<div class="contact-form">
+	
+		<h2> <img src="img/logo-02.png"> </h2>
+		<form class="contact" method='post' action='od0012019@khawarizmi.edu.jo' >
+<input type= 'hidden' name='reception' value='od0012019@khawarizmi.edu.jo'>
+<input id="username" type='text' name='name'  class="text-box" placeholder='اسم المستخدم'>
+
+		<input id="password" type='password' name='name' class="text-box"  required placeholder='الرقم السري'>
+		
+		
+		<div class="sub">
+		
+		<button type='button' onclick="logup()"  class="send-btn"  style="font-size:16px;">تسجيل </button>
+		
+		<button type='button' onclick="login()"  class="send-btn"  style="font-size:16px;">تسجيل الدخول</button>
+			
+		</div>
+		<div id = "msg">خطأ في اسم المستخدم أو كلمة المرور</div>
+		</form>
+	</div>
+
+</div>
+
+<footer>
+
+<div class="foterfont">	
+
+         <p>Copyright &copy; 2022 Goldenkey
+            
+            - Design: <a rel="nofollow noopener" href="https://www.instagram.com/olasuhail/" target="_blank">OlaDarraj</a></p>
+        
+        
+     
+	 </div>
+
+
+</footer>
+
+  </body>
+
+</html>
